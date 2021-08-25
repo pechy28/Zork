@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zork", "Zork\Zork.csproj", "{369441F8-9744-48B2-AAC9-7989241CF50B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{369441F8-9744-48B2-AAC9-7989241CF50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369441F8-9744-48B2-AAC9-7989241CF50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369441F8-9744-48B2-AAC9-7989241CF50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369441F8-9744-48B2-AAC9-7989241CF50B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6C64E0D-C8EA-45D8-9ECD-2ED500C0CB9D}
+	EndGlobalSection
+EndGlobal
