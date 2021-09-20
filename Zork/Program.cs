@@ -5,7 +5,7 @@ namespace Zork
 {
     internal class Program
     {
-        private static string CurrentRoom
+        private static Room CurrentRoom
         {
             get
             {
@@ -14,14 +14,14 @@ namespace Zork
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Zork!");
 
+            Console.WriteLine("Welcome to Zork!");
+           
 
             Commands command = Commands.UNKNOWN;
             while (command != Commands.QUIT)
             {
-                Console.WriteLine(CurrentRoom);
-                Console.Write(">");
+                Console.Write($"{CurrentRoom.Name}\n> ");
                 command = ToCommand(Console.ReadLine().Trim());
 
                 switch (command)
@@ -31,7 +31,7 @@ namespace Zork
                         break;
 
                     case Commands.LOOK:
-                        Console.WriteLine("This is an open field west of a white house, with a boarded front door. \nA rubber mat saying 'Welcome to Zork!' lies by the door.");
+                        Console.WriteLine(CurrentRoom.Description);
                         break;
 
                     case Commands.NORTH:
@@ -91,11 +91,16 @@ namespace Zork
 
         private static bool IsDirection(Commands command) => Directions.Contains(command);
 
-        private static readonly string[,] Rooms =
+        private static void InitializeRoomDescriptions()
+        {
+            Rooms[0, 0].Description = "You are on a rock-strewn trail";
+        }
+
+        private static readonly Room[,] Rooms =
           {
-            { "Rocky Trail", "South of House", "Canyon View" },
-            { "Forest", "West of House", "Behind House" },
-            { "Dense Woods", "North of House", "Clearing" },
+            { new Room("Rocky Trail"), new Room("South of House"), new Room("Canyon View") },
+            { new Room("Forest"), new Room("West of House"), new Room("Behind House") },
+            { new Room("Dense Woods"), new Room("North of House"), new Room("Clearing") },
           };
 
         private static readonly List<Commands> Directions = new List<Commands>
