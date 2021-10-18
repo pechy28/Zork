@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w22MIAIJzWUGFmTuGhr0IKc456kaI6zmgl/X/FPCqF13v7tM/IYfbCKvZfdhnnckSOabeEMwAeP4CMnoQZnEKA==",
+  "dgSpecHash": "7t14RDExAe5zUdd8yZmVl49c1lZF0GMtKG3JRXmyhPcxqyNvHQRb+1PvPUbO2e2pU2ZC1Yefn+sJDhqxFrBNog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mi969139\\source\\repos\\Zork2\\Zork.Common\\Zork.Common.csproj",
+  "projectFilePath": "C:\\Users\\mi969139\\Documents\\GitHub\\Zork\\Zork.Common\\Zork.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
